@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordian</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1;
+      }
+
+      .accordian {
+        color: #403d39;
+        width: 60%;
+        margin: 100px auto;
+      }
+      .item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 32px;
+        padding: 24px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        align-items: center;
+      }
+      .number {
+        color: #bcb8b1;
+        font-size: 24px;
+        font-weight: 600;
+        align-items: center;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #208b3a;
+      }
+      .hidden-box {
+        grid-column: 2;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: none;
+      }
+      p {
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+      .text {
+        margin-bottom: 20px;
+      }
+      .list ul {
+        color: #bcb8b1;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+      .open {
+        border-top: 4px solid #208b3a;
+      }
+      .open .number {
+        color: #208b3a;
+      }
+      .open .title {
+        color: #208b3a;
+      }
+      .open .icon {
+        color: #208b3a;
+      }
+      .open .hidden-box {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordian">
+      <div class="item">
+        <p class="number">01</p>
+        <p class="title">Where are these chairs assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            ipsa quae accusantium numquam nisi asperiores deserunt eveniet,
+            assumenda blanditiis debitis deleniti autem nesciunt cupiditate
+            nostrum! Unde impedit magni omnis possimus.
+          </p>
+          <div class="list">
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipis.</li>
+              <li>totam sed modi praesentium nesciunt quas suntgf.</li>
+              <li>ratione sequi laborum voluptas non quis repre.</li>
+              <li>Temporibus itaque assumenda dignissimos velitde.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item open">
+        <p class="number">02</p>
+        <p class="title">How long do I have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            ipsa quae accusantium numquam nisi asperiores deserunt eveniet,
+            assumenda blanditiis debitis deleniti autem nesciunt cupiditate
+            nostrum! Unde impedit magni omnis possimus.
+          </p>
+          <div class="list">
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipis.</li>
+              <li>totam sed modi praesentium nesciunt quas suntgf.</li>
+              <li>ratione sequi laborum voluptas non quis repre.</li>
+              <li>Temporibus itaque assumenda dignissimos velitde.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <p class="number">03</p>
+        <p class="title">Do you ship to countries outside E.U?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            ipsa quae accusantium numquam nisi asperiores deserunt eveniet,
+            assumenda blanditiis debitis deleniti autem nesciunt cupiditate
+            nostrum! Unde impedit magni omnis possimus.
+          </p>
+          <div class="list">
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipis.</li>
+              <li>totam sed modi praesentium nesciunt quas suntgf.</li>
+              <li>ratione sequi laborum voluptas non quis repre.</li>
+              <li>Temporibus itaque assumenda dignissimos velitde.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

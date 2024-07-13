@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello_section Omni-food Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1;
+        /* Dont do this, instead use a container, width: 65%;
+        margin: 0 auto; */
+        color: #444;
+      }
+      body {
+        // <uniquifier>: Use a unique and descriptive class name
+        // <weight>: Use a value from 300 to 900
+
+        .rubik-<uniquifier > {
+          font-family: "Rubik", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: <weight>;
+          font-style: normal;
+        }
+      }
+
+      header {
+        /* align-items: center;
+        justify-content: center; */
+        height: 100vh;
+        /* background-color: violet; */
+        position: relative;
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
+      }
+      section {
+        background-color: #f7f7f7;
+      }
+      .container {
+        width: 65%;
+        margin: 0 auto;
+        /* background-color: red; */
+      }
+      nav.container {
+        font-weight: 800;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        /* color: #fff; */
+      }
+      header,
+      section {
+        margin-bottom: 32px;
+      }
+
+      .header-container {
+        width: 65%;
+
+        margin: 0 auto;
+        /* background-color: red; */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        /* text-align: center; this what is done by most websites. */
+      }
+      .header-inner {
+        width: 50%;
+      }
+
+      p {
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+      h1 {
+        font-size: 32px;
+        margin-bottom: 32px;
+      }
+      h2 {
+        font-size: 34px;
+        margin-bottom: 24px;
+      }
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: #fff;
+        background-color: #f05d0e;
+        font-size: 18px;
+        margin: 20px 0;
+        padding: 16px 32px;
+        display: inline-block;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">LOGO</div>
+        <div class="navid">NAVIGATION</div>
+      </nav>
+
+      <div class="header-container">
+        <div class="header-inner">
+          <h1>A healthy meal delivered to your door, every single day.</h1>
+          <p class="texty">
+            The smart 365-days-per-year food subscription that will make you eat
+            healthy again. Tailored to your personal tastes and nutritional
+            needs.
+          </p>
+          <a href="#"> Start eating well </a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Some Random topic heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magnam
+          voluptatibus porro accusantium debitis illum quas, sint, consequuntur
+          ad quaerat, minus odio! In corrupti, quia omnis sint hic voluptas
+          illo!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

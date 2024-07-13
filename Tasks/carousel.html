@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carousel-Maria_de_Almeida</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1;
+      }
+      .carousel {
+        background-color: #007200;
+        width: 700px;
+        margin: 100px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 62px;
+        padding: 20px;
+        border-radius: 12px;
+        padding-left: 74px;
+        position: relative;
+      }
+      .maria {
+        height: 200px;
+        border-radius: 12px;
+        transform: scale(1.4);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+      }
+      .testimonial {
+        color: #d2efb5;
+      }
+      .quote {
+        font-weight: 500;
+        margin-bottom: 32px;
+        line-height: 1.4;
+      }
+      .name {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+      .job {
+        font-weight: 500;
+
+        font-size: 14px;
+      }
+      .btn {
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.6);
+      }
+      .btn--left {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn--right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #007200;
+      }
+      .dots {
+        display: flex;
+        gap: 8px;
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, 250%);
+      }
+      .dot {
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid #007200;
+      }
+      .open {
+        background-color: #007200;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img class="maria" src="maria.jpg" alt="Maria_de Almeida" />
+      <blockquote class="testimonial">
+        <p class="quote">
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          perferendis incidunt sunt ipsa, doloribus fugiat tempore eaque hic, ab
+          ipsam."
+        </p>
+        <p class="name">Maria de Almeida</p>
+        <p class="job">Senior Product Manager at EDP Commercial</p>
+      </blockquote>
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <p class="dot open">&nbsp;</p>
+        <p class="dot">&nbsp;</p>
+        <p class="dot">&nbsp;</p>
+        <p class="dot">&nbsp;</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>challenge-pagination</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1;
+      }
+      .pagination {
+        margin-top: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn {
+        border: none;
+        background-color: #fff;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #208b3a;
+        cursor: pointer;
+        margin: 24px;
+      }
+      .btn:hover {
+        background-color: #208b3a;
+      }
+      .btn:hover .icon {
+        stroke: #fff;
+      }
+      .icon {
+        stroke: #208b3a;
+        width: 24px;
+        height: 24px;
+      }
+      /* Dont do this, . {
+              display: inline-block;
+              align-items: center;
+              justify-content: center;
+              color: #444;
+            } */
+
+      /* .number:link,
+            .number:visited {
+              display: inline-block;
+              text-decoration: none;
+              color: #1e1d1d;
+              font-size: 18px;
+              width: 32px;
+              height: 30px;
+              border-radius: 100%;
+              align-items: center;
+              justify-items: center;
+              padding: 6px 11px;
+              padding-left: 7px;
+              gap: 20;
+              text-align: center;
+            } */
+
+      .number:link,
+      .number:visited {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #444;
+        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        text-align: center;
+      }
+      .number:hover,
+      .number:active,
+      .number.number-current {
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none; */
+        color: #fff;
+        /* font-size: 18px; */
+        background-color: #208b3a;
+        /* width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              text-align: center; */
+
+        /* dont use this */
+        /* .number:hover,
+            .number:active {
+              display: inline-block;
+              text-decoration: none;
+              color: #fff;
+              font-size: 18px;
+              background-color: #208b3a;
+              width: 32px;
+              height: 30px;
+              border-radius: 100%;
+              align-items: center;
+              justify-items: center;
+              padding: 6px 11px;
+              padding-left: 7px;
+              gap: 20;
+              text-align: center; */
+      }
+      .dots {
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <a class="number" href="#">1</a>
+      <a class="number" href="#">2</a>
+      <a class="number number-current" href="#">3</a>
+      <a class="number" href="#">4</a>
+      <a class="number" href="#">5</a>
+      <a class="number" href="#">6</a>
+      <span class="dots">...</span>
+      <a class="number" href="#">23</a>
+
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
